@@ -1,27 +1,72 @@
-# ServicesDeepDive
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
+# 🧠 Mini-Projet Angular – Services & Injection de Dépendances
 
-## Development server
+Projet réalisé dans le cadre de la section _"Services & Dependency Injection – Deep Dive"_ de la formation **Angular - The Complete Guide (2025 Edition)** de Maximilian Schwarzmüller (Udemy).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+🎯 **Objectif** : comprendre comment externaliser et réutiliser la logique métier avec des services Angular, et maîtriser les différents mécanismes d’injection de dépendances.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🧠 Concepts Angular mis en œuvre
 
-## Build
+- Création de services Angular (`LoggerService`, `AuthService`, etc.)
+- Injection de dépendances dans les composants (`@Injectable`, injection dans le constructeur)
+- Fourniture de services via `providedIn`, `@Inject()`, ou `providers[]`
+- Différences entre injecteurs (root vs élément)
+- Réutilisation de logique partagée entre composants
+- Injection de valeurs personnalisées (`InjectionToken`, objets statiques, non-classes)
+- Composition de services : un service injecté dans un autre
+- Analyse du comportement des injecteurs via les DevTools Angular
+- Utilisation de `NgModule` vs Standalone API pour les providers
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 📂 Structure du projet
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+src/
+├── app/
+│   ├── services/
+│   │   ├── logger.service.ts          # Service de log personnalisé
+│   │   ├── auth.service.ts            # Simule une authentification
+│   │   ├── config.token.ts            # InjectionToken pour la configuration
+│   ├── components/
+│   │   ├── login/
+│   │   └── header/
+│   ├── app.component.ts
+│   └── app.config.ts
+```
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🧰 Technologies utilisées
 
-## Further help
+- Angular 18
+- TypeScript
+- Standalone Components
+- Angular CLI
+- HTML/CSS
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## 🚀 Lancer l’application
+
+```bash
+npm install
+ng serve
+```
+
+Accès à l’application : [http://localhost:4200](http://localhost:4200)
+
+---
+
+## 📌 Remarques
+
+> Ce projet est purement didactique et sert à illustrer les mécanismes fondamentaux de l’injection de dépendances dans Angular, ainsi que la structuration des services dans une application modulaire.
+
+---
+
+## 🔗 Liens utiles
+- 👤 [Mon profil LinkedIn](https://www.linkedin.com/in/kevin-maldonado-a17864295)
+- 📘 [Formation Udemy – Angular](https://www.udemy.com/course/the-complete-guide-to-angular-2/)
+- 🧠 [Documentation Angular – DI](https://angular.io/guide/dependency-injection)
