@@ -67,6 +67,6 @@ Accès à l’application : [http://localhost:4200](http://localhost:4200)
 ---
 
 ## 🔗 Liens utiles
-- 👤 [Mon profil LinkedIn](https://www.linkedin.com/in/kevin-maldonado-a17864295)
+- 👤 [Mon profil LinkedIn](https://www.linkedin.com/in/kevin-maldonado-km)
 - 📘 [Formation Udemy – Angular](https://www.udemy.com/course/the-complete-guide-to-angular-2/)
 - 🧠 [Documentation Angular – DI](https://angular.io/guide/dependency-injection)
